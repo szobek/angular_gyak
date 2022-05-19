@@ -7,6 +7,9 @@ import { FetchComponent } from './components/fetch/fetch.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
+
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbPaginationModule, NgbAlertModule,
     HttpClientModule
   ],
   providers: [],

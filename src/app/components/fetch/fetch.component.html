@@ -1,3 +1,19 @@
-<ul>
-    <li *ngFor="let serie of series">{{serie.title}} - {{serie.content}}</li>
-</ul>
+<div class="container">
+    <div class="row">
+
+        <ul>
+            <li *ngFor="let serie of series"> <div class="card">
+                <div class="card-header">
+                    cím: {{serie.title}}
+                </div>
+                <div class="card-body">
+                    leírás: {{serie.content}}
+                </div>
+                <div class="card-footer">
+                    évad: {{serie.series}} rész: {{serie.episode}}
+                </div>
+            </div>  
+        </li>
+        </ul>
+    </div>
+</div>
